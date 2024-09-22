@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="../sources/taskbar/win.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/efiapp.css">
+        <title>BIOS</title>
+    </head>
+    <body>
+        <div class="container">
+            <a id="yellow">Startup Menu</a>
+            <br>
+            <br>
+            <a id="white">F9 = Setup Utility</a>
+            <br>
+            <a id="white">F10 = Boot Manager</a>
+        </div>
+        <script>
+            var addEvent = document.addEventListener ? function(target,type,action){
+                if(target){
+                    target.addEventListener(type,action,false);
+                }
+
+            } : function(target,type,action){
+                if(target){
+                    target.attachEvent('on' + type,action,false);
+                }
+            }
+    
+            addEvent(document,'keydown',function(e){
+                e = e || window.event;
+                var key = e.which || e.keyCode;
+                if(key===121){
+                    window.location.replace("bootmanager.html");
+                } else if(key===120){
+                    window.location.replace("setup/info.html");
+                }
+            });
+          </script>
+    </body>
+</html>

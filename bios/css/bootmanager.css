@@ -11,7 +11,7 @@ body {
     src: url('../sources/fonts/DOSVGA437.ttf')
 }
 
-.header-bootmanager {
+.STR_BM_BANNER {
     text-align: center;
     background-color: #0000ff;
     color: #FFFFFF;
@@ -22,6 +22,6 @@ body {
     color: #000000;
 }
 
-.bootdevices a {
+.BDS a {
     color: #0000ff;
 }
