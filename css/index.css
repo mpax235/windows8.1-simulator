@@ -47,6 +47,7 @@ body {
 
 a {
     cursor: url('../sources/cursors/link.png'), auto;
+    cursor: pointer;
 }
 
 p {
