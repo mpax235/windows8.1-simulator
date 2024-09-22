@@ -1,0 +1,17 @@
+#logonavbartaskicon {
+    width: auto;
+    height: 32px;
+    margin: 4px 16px 0px 0px;
+    z-index: -1;
+    align-self: center;
+    text-decoration: none;
+}
+
+#fileexplorer {
+    width: auto;
+    height: 32px;
+    margin: 4px 0px 0px 20px;
+    z-index: -1;
+    align-self: center;
+    text-decoration: none;
+}

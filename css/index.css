@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../sources/fonts/segoeui.ttf')
+}
+
+body {
+    background-color: black;
+    background-image: url('../sources/wallpapers/img0.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    min-width: 100wh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+
+.taskbar {
+    background-image: url('../sources/taskbar/win8taskbar.png');
+    overflow: hidden;
+    font-family: 'Segoe UI';
+    margin: 0;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    padding: 0 10px;
+    box-sizing: border-box;
+    align-items: right;
+}
+
+body {
+    cursor: url('../sources/cursors/arrow.png'), auto;
+}
+
+a {
+    cursor: url('../sources/cursors/link.png'), auto;
+}
+
+p {
+    margin: 0px;
+}
+
+.datetime {
+    text-align: center;
+    float: right;
+    margin: -10px 25px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    color: #FFFFFF;
+    align-self: center;
+    text-justify: right;
+    right: 100%;
+    float: right;
+    margin-left: auto;
+}
+
+.oops {
+    font-family: 'Segoe UI';
+    text-align: center;
+}
