@@ -5,6 +5,10 @@
        <title>Windows 8.1 Simulator</title>
        <link rel="icon" href="sources/taskbar/win.png">
        <link rel="stylesheet" href="bios/css/post.css"> <!--this is for the main core-->
+       <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
    </head>
    <body>
         <noscript>
@@ -24,13 +28,32 @@
            <img src="bios/sources/logos/mpax235.png">
        </div>
        <div class="prompt">
-           <a href="bios/setup/info.html">Press this text to go to the Setup Utility</a>
+           <a href="bios/setup/info.html">Press this text or F12 to go to the Setup Utility</a>
        </div>
        <script>
         // Wait for 2 seconds (2000 milliseconds) and then redirect to the specified page
         setTimeout(function() {
           window.location.href = "desktop.html"; // Replace with your desired URL
         }, 2000);
+      </script>
+      <script>
+        var addEvent = document.addEventListener ? function(target,type,action){
+    if(target){
+        target.addEventListener(type,action,false);
+    }
+} : function(target,type,action){
+    if(target){
+        target.attachEvent('on' + type,action,false);
+    }
+}
+
+addEvent(document,'keydown',function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    if(key===123){
+      window.location.replace("bios/setup/info.html");
+    }
+});
       </script>
    </body>
 </html>
