@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../sources/fonts/segoeui.ttf')
+}
+body {
+    background-image: url('../sources/wallpapers/img0.png');
+}
