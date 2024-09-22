@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 5px;
+    background-color: black;
+    font-family: BIOS;
+}
+
+a {
+    color: #a9a9a9;
+}
+
+br {
+    padding: 5px;
+    margin: 5px;
+}
+
+/*----------------------------------*/
+/*EFI Colors                        */
+/*----------------------------------*/
+
+#black {
+    color: #000000;
+}
+
+#blue {
+    color: #0000ff;
+}
+
+#green {
+    color: #00ff00;
+}
+
+#cyan {
+    color: #00ffff;
+}
+
+#red {
+    color: #ff0000;
+}
+
+#magenta {
+    color: #ff00ff;
+}
+
+#brown {
+    color: #964b00;
+}
+
+#lightgray {
+    color: #d3d3d3;
+}
+
+#darkgray {
+    color: #a9a9a9;
+}
+
+#lightblue {
+    color: #90d5ff;
+}
+
+#lightgreen {
+    color: #90ee90;
+}
+
+#lightcyan {
+    color: #acfffc;
+}
+
+#lightred {
+    color: #ff474c;
+}
+
+#lightmagenta {
+    color: #ff80ff;
+}
+
+#yellow {
+    color: #ffff00;
+}
+
+#white {
+    color: #ffffff;
+}
