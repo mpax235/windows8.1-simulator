@@ -1,0 +1,46 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.logo img {
+    height: 300px;
+}
+
+a {
+    color: #FFFFFF;
+    font-family: BIOS;
+}
+
+@font-face {
+    font-family: 'BIOS';
+    src: url('../sources/fonts/DOSVGA437.ttf')
+}
+
+.POSTcode1 {
+    font-family: BIOS;
+}
+
+.prompt {
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+        bottom: 0;
+    }
+}
