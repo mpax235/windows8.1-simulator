@@ -28,14 +28,14 @@
            <img src="bios/sources/logos/mpax235.png">
        </div>
        <div class="prompt">
-           <a href="bios/setup/info.html">Press this text or F12 to go to the Setup Utility</a>
+           <a>Press Enter to go to the Startup menu</a>
        </div>
-       <script>
+       <!-- <script>
         // Wait for 2 seconds (2000 milliseconds) and then redirect to the specified page
         setTimeout(function() {
           window.location.href = "desktop.html"; // Replace with your desired URL
         }, 2000);
-      </script>
+      </script> -->
       <script>
         var addEvent = document.addEventListener ? function(target,type,action){
     if(target){
@@ -50,8 +50,11 @@
 addEvent(document,'keydown',function(e){
     e = e || window.event;
     var key = e.which || e.keyCode;
-    if(key===123){
+    if (event.key == 'Enter') {
       window.location.replace("bios/setup/info.html");
+    }
+    if(key===123){
+      window.location.replace("bios/bootmanager.html");
     }
 });
       </script>
