@@ -1,0 +1,27 @@
+body {
+    background-color: hsl(0, 0%, 83%);
+}
+
+.bootmanager {
+    font-family: BIOS;
+}
+
+@font-face {
+    font-family: 'BIOS';
+    src: url('../sources/fonts/DOSVGA437.ttf')
+}
+
+.header-bootmanager {
+    text-align: center;
+    background-color: #0000ff;
+    color: #FFFFFF;
+    padding: 9px;
+}
+
+.info-bootmanager a {
+    color: #000000;
+}
+
+.bootdevices a {
+    color: #0000ff;
+}

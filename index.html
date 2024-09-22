@@ -7,12 +7,11 @@
        <link rel="stylesheet" href="bios/css/post.css"> <!--this is for the main core-->
    </head>
    <body>
-       <noscript>
+        <noscript>
            <div id="POSTcode1">
-             POST code: 0x01
-             <br>
-             <br>
              Javascript is disabled. Please enable Javascript.
+            <br>
+             POST code: 0x01
              <br><br>
              <!-- Audio element for the beep sound -->
              <audio autoplay>
@@ -27,5 +26,11 @@
        <div class="prompt">
            <a href="bios/setup/info.html">Press this text to go to the Setup Utility</a>
        </div>
+       <script>
+        // Wait for 2 seconds (2000 milliseconds) and then redirect to the specified page
+        setTimeout(function() {
+          window.location.href = "desktop.html"; // Replace with your desired URL
+        }, 2000);
+      </script>
    </body>
 </html>
