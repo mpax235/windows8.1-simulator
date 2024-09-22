@@ -35,3 +35,10 @@ a {
 .setup2 {
     font-family: BIOS;
 }
+
+.warning {
+    margin: 0px;
+    padding: 3px;
+    text-align: center;
+    background-color: #000000;
+}
