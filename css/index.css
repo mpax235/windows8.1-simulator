@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Segoe UI';
     src: url('../sources/fonts/segoeui.ttf')
@@ -28,15 +29,15 @@ body {
     margin: 0;
     text-align: left;
     position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 50px;
-    width: 100%;
+    bottom: 0; /* Positions it at the bottom */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts for centering */
+    height: 50px; /* Reduced height to look like a taskbar */
+    width: 100%; /* Makes it full width */
     background-color: none;
-    display: flex;
-    padding: 0 10px;
-    box-sizing: border-box;
+    display: flex; /* Uses flexbox to align items */
+    padding: 0 10px; /* Adds padding for inner spacing */
+    box-sizing: border-box; /* Includes padding in width/height */
     align-items: right;
 }
 
@@ -60,7 +61,7 @@ p {
     font-family: 'Segoe UI';
     color: #FFFFFF;
     align-self: center;
-    text-justify: right;
+    text-justify: right; /* Spaces items evenly */
     right: 100%;
     float: right;
     margin-left: auto;

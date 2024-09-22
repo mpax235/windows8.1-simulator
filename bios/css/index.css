@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'BIOS';
+    src: url('../sources/fonts/DOSVGA437.ttf')
+}
+
+.setup {
+    font-family: BIOS;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    margin: 0px;
+    padding: 3px;
+    text-align: center;
+    background-color: #00ffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #00ffff;
+    padding: 3px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 3px 0px;
+}
+
+.setup2 {
+    font-family: BIOS;
+}

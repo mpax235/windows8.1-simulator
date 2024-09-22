@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../sources/fonts/segoeui.ttf')
+}
+
+.oops {
+    font-family: 'Segoe UI';
+    text-align: center;
+}

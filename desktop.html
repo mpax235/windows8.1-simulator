@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Windows 8.1 Simulator</title>
         <link rel="stylesheet" href="css/index.css"> <!--this is for the main core-->
         <link rel="stylesheet" href="css/apps.css"> <!--this is for the apps/start button-->
         <script src="js/time.js"></script> <!--for the time in the taskbar-->
         <script src="js/date.js"></script> <!--for the date in the taskbar-->
+        <link rel="icon" href="sources/taskbar/win.png">
     </head>
     <body>
         <div class="taskbar">
-            <div class="apps">
+            <div class="logos">
                 <a href="win8.1/taskbar/start/win.html">  <img class="active" src="sources/taskbar/win.png" id="logonavbartaskicon"> </a>
+                <a href="win8.1/apps/iexplore.html"> <img class="active" src="sources/apps/ie.png" id="internetexplorer"> </a>
+                <a href="win8.1/apps/fileexplore.html"> <img class="active" src="sources/apps/explorer.png" id="fileexplorer"> </a>
+                <a href="win8.1/apps/mediaplay.html"> <img class="active" src="sources/apps/mediaplayer.png" id="mediaplayer"> </a>
             </div>
             <div class="datetime">
                 <p id="time"></p>
