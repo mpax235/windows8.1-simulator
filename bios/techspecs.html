@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>BIOS</title>
+        <link rel="stylesheet" href="css/index.css"> <!--this is for the main core-->
+        <link rel="stylesheet" href="css/efiapp.css"> <!--this is for the second core-->
+        <link rel="icon" href="../sources/taskbar/win.png">
+        <style>
+            #white-model {
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a id="yellow">Technical Specifications</a>
+            <br>
+            <br>
+            <a id="white">Model:</a>
+            <a id="black">aaaaaaaaaaaaaaa</a>
+            <a id="white-model"></a>
+            <br>
+            <a id="white">Processor Model:</a>
+            <a id="black">aaaaa</a>
+            <a id="white">Intel Core i7-4930MX (4th Generation)</a>
+            <br>
+            <a id="white">Processor Speed:</a>
+            <a id="black">aaaaa</a>
+            <a id="white">3.0 - 3.9GHz</a>
+            <br>
+            <a id="white">Total Memory:</a>
+            <a id="black">aaaaaaaa</a>
+            <a id="white">32768 MB</a>
+            <br>
+            <a id="white">Graphics Card:</a>
+            <a id="black">aaaaaaa</a>
+            <a id="white">NVIDIA GeForce GTX 780M</a>
+            <br>
+            <a id="white">Graphics Speed:</a>
+            <a id="black">aaaaaa</a>
+            <a id="white">771 - 797MHz</a>
+            <br>
+            <a id="white">Total Graphics Memory:</a>
+            <a id="white">4096 MB</a>
+            <br>
+            <br>
+            <a id="cyan">To exit, press the ESC key.</a>
+        </div>
+        <script>
+            var addEvent = document.addEventListener ? function(target,type,action){
+                if(target){
+                    target.addEventListener(type,action,false);
+                }
+
+            } : function(target,type,action){
+                if(target){
+                    target.attachEvent('on' + type,action,false);
+                }
+            }
+    
+            addEvent(document,'keydown',function(e){
+                e = e || window.event;
+                var key = e.which || e.keyCode;
+                if(key===121){
+                    window.location.replace("bootmanager.html");
+                } else if(key===120){
+                    window.location.replace("setup/info.html");
+                } else if(key===27){
+                    window.location.replace("startupmenu.html");
+                }
+            });
+        </script>
+        <script>
+            function getOSInfo() {
+            let userAgent = navigator.userAgent;
+            let os = "Unknown OS";
+
+            if (userAgent.indexOf("Win") !== -1) {
+                os = "Windows";
+                if (userAgent.indexOf("Windows NT 10.0") !== -1) os += " 10 / 11";
+                else if (userAgent.indexOf("Windows NT 6.3") !== -1) os += " 8.1";
+                else if (userAgent.indexOf("Windows NT 6.2") !== -1) os += " 8";
+                else if (userAgent.indexOf("Windows NT 6.1") !== -1) os += " 7";
+                else if (userAgent.indexOf("Windows NT 6.0") !== -1) os += " Vista";
+                else if (userAgent.indexOf("Windows NT 5.1") !== -1) os += " XP";
+                } else if (userAgent.indexOf("Mac") !== -1) {
+                    os = "macOS";
+                } else if (userAgent.indexOf("Linux") !== -1) {
+                    os = "Linux";
+                } else if (userAgent.indexOf("Android") !== -1) {
+                    os = "Android";
+                } else if (userAgent.indexOf("like Mac") !== -1) {
+                    os = "iOS";
+                }
+
+                return os;
+            }
+
+            document.getElementById('white-model').innerText = "" + getOSInfo();
+        </script>
+    </body>
+</html>

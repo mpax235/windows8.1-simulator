@@ -11,9 +11,21 @@
             <a id="yellow">Startup Menu</a>
             <br>
             <br>
-            <a id="white">F9 = Setup Utility</a>
+            <a id="white">F2</a>
+            <a id="black">aaa</a>
+            <a id="white">- Technical Specifications (System Information)</a>
             <br>
-            <a id="white">F10 = Boot Manager</a>
+            <a id="white">F9</a>
+            <a id="black">aaa</a>
+            <a id="white">- Setup Utility</a>
+            <br>
+            <a id="white">F10</a>
+            <a id="black">aa</a>
+            <a id="white">- Boot Manager</a>
+            <br>
+            <br>
+            <a id="white">For more information about this screen, please visit:</a>
+            <a><a id="blue">mpax235.github.io/website</a><a id="white">.</a></a>
         </div>
         <script>
             var addEvent = document.addEventListener ? function(target,type,action){
@@ -34,6 +46,8 @@
                     window.location.replace("bootmanager.html");
                 } else if(key===120){
                     window.location.replace("setup/info.html");
+                } else if(key===113){
+                    window.location.replace("techspecs.html");
                 }
             });
           </script>
